@@ -55,10 +55,18 @@ footer{
     background-color: #63229F;
     height:4em;
 }
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:2em;
+}
 
 h1{
     font-family: 'Shadows Into Light';
     font-size: 32px;
+    text-align: center;
+    margin:1em
 }
 h2{
     font-family: 'Shadows Into Light';
@@ -69,6 +77,11 @@ aside{
     padding:1em;
     text-align:center;
 }
+.line{
+    background-color: #daddd8 ;
+    height: 2px;
+    margin:2em;
+}
 
 #logo{
     display:flex;
@@ -76,13 +89,6 @@ aside{
     padding:1em;
 }
 
-main{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:2em;
-}
 .accueil-layer1{
     display:flex;
     flex:1;
@@ -98,13 +104,32 @@ main{
 }
 .fleursaccueil{
     object-fit: contain;
-    width:200px;
+    height:200px;
     padding:0 1em;
     padding-top:1em;
+    border-radius:15%
 }
-.line{
-    background-color: #daddd8 ;
-    height: 2px;
-    width: 100%;
-    margin:2em
+
+.equipe{
+    display:flex;
+    justify-content: space-evenly;
+}
+.desc-equipe{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.desc-equipe-rev{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.desc-equipe-group{
+    display:flex;
+    flex-direction: inherit;
+    justify-content: flex-start;
+}
+.image-equipe{
+    object-fit: contain;
+    height:250px;
 }
