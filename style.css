@@ -133,3 +133,24 @@ aside{
     object-fit: contain;
     height:250px;
 }
+label{
+    background-color: transparent;
+}
+label, select, input{
+    margin:0.5em
+}
+form{
+    background-color:#63229F;
+    padding:1em;
+    border-radius: 1em;
+}
+.form{
+    display: flex;
+    justify-content: center;
+
+}
+textarea{
+    width:100%;
+    max-width: 600px;
+    height:20em
+}

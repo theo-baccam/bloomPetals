@@ -23,6 +23,34 @@
                 <input id="searchbarinput" type="text" placeholder="Recherche...">
             </div>
         </header>
+        <main>
+            <section id="logo">
+                <img src="images/logo.png" width="480">
+            </section>
+            <section class="form">
+                <form>
+                    <label for="civilite">Civilité:</label><br>
+                    <select name="civilite" id="civilite">
+                        <option value="monsieur">Monsieur</option>
+                        <option value="madame">Madame</option>
+                    </select>
+                    <br>
+                    <label for="nom">Nom:</label><br>
+                    <input type="text" id="nom" name="nom">
+                    <br>
+                    <label for="prenom">Prénom:</label><br>
+                    <input type="text" id="prenom" name="prenom"><br>
+                    <label for="objet">Objet:</label><br>
+                    <input type="text" id="objet" name="objet"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input type="checkbox" id="accept" name="accept" value="Accept">
+                    <label for="accept">J'ai lu et j'accepte la politique de 
+                    confidentialité </label><br>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </section>
+        </main>
         <footer>
         </footer>
     </body>
