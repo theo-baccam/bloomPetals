@@ -32,7 +32,7 @@ header{
     text-decoration: none;
 }
 .headerlinks{
-    background-color:#63229F;
+    background-color: #63229F;
     text-decoration: none;
     padding:1em
 }
@@ -153,4 +153,30 @@ textarea{
     width:100%;
     max-width: 600px;
     height:20em
+}
+
+#mosaic{
+    display:flex;
+    flex-direction:row;
+    justify-content: center
+}
+#column1{
+    display:flex;
+    flex-direction:column;
+    justify-content:start
+}
+#column2{
+    display:flex;
+    flex-direction:column;
+    justify-content:start
+}
+#column3{
+    display:flex;
+    flex-direction:column;
+    justify-content:start
+}
+.mosaic{
+    object-fit: contain;
+    width: 200px;
+    margin:0.25em
 }
