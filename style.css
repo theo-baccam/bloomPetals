@@ -1,3 +1,4 @@
+/* Paramètres globaux */
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
@@ -8,7 +9,8 @@
 
 }
 *{
-    margin: 0;
+    margin: 0;                      /* J'ai mis la marge à 0 globalement car sinon
+                                    le header ne s'affiche pas correctement.*/
     font-family: Montserrat;
     background-color: #362A44;
     color:#daddd8
@@ -25,6 +27,8 @@ header{
     position:sticky;
     top:0
 }
+
+/* Le header s'adapte à la largeur de l'écran */
 @media screen and (max-width: 625px) and (min-width: 420px){
   header {
     height:8em;
@@ -35,6 +39,9 @@ header{
     height:12em;
   }
 }
+
+/* headerlinkdiv contient deux items, le nav et la barre de recherche, qui sont
+séparés le plus loins possible.*/
 #headerlinkdiv{
     display:flex;
     flex-direction: row;
@@ -47,13 +54,6 @@ header{
     background-color: #63229F;
     text-decoration: none;
     padding:1em
-}
-#headersearchdiv{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right:1em;
-    background-color:#63229F;
 }
 #searchbarinput{
     overflow: hidden;
@@ -89,16 +89,23 @@ aside{
     padding:1em;
     text-align:center;
 }
+/* La ligne qui divise les sujets */
 .line{
     background-color: #daddd8 ;
     height: 2px;
     margin:2em;
+    width:480
 }
+
+/* Index */
 
 #logo{
     display:flex;
-    justify-content:center;
+    justify-content: center;
     padding:1em;
+}
+#logo-img{
+    width:480px
 }
 
 .accueil-layer1{
@@ -122,10 +129,8 @@ aside{
     border-radius:15%
 }
 
-.equipe{
-    display:flex;
-    justify-content: space-evenly;
-}
+/* Entreprise */
+
 .desc-equipe{
     display:flex;
     flex-direction: row;
@@ -142,10 +147,22 @@ aside{
     justify-content: flex-start;
     flex-wrap:wrap;
 }
+.desc-equipe-texte{
+    flex-basis:45%
+}
 .image-equipe{
     object-fit: contain;
     height:250px;
 }
+#photo6{
+    width:30%;
+    height:250px;
+    object-fit: cover;
+    object-position: 80% 0;
+}
+
+/* Formulaire contact */
+
 label{
     background-color: transparent;
 }
@@ -154,10 +171,10 @@ label, select, input{
 }
 form{
     background-color:#63229F;
-    padding:1em;
+    padding:2em;
     border-radius: 1em;
 }
-.form{
+#form{
     display: flex;
     justify-content: center;
 
@@ -167,6 +184,12 @@ textarea{
     max-width: 600px;
     height:20em
 }
+select, textarea, input{
+    padding:0.25em;
+    border-radius:0.25em
+}
+
+/* Mosaïque réalisation */
 
 #mosaic{
     display:flex;

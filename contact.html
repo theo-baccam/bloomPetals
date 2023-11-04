@@ -13,21 +13,19 @@
     </head>
     <body>
         <header>
-            <div id="headerlinkdiv">
+            <nav id="headerlinkdiv">
                 <a class="headerlinks" href="index.html">Home</a>
                 <a class="headerlinks" href="entreprise.html">Entreprise</a>
                 <a class="headerlinks" href="realisations.html">Réalisations</a>
                 <a class="headerlinks" href="contact.html">Contact</a>
-            </div>
-            <div id="headersearchdiv">
-                <input id="searchbarinput" type="text" placeholder="Recherche...">
-            </div>
+            </nav>
+            <input id="searchbarinput" type="text" placeholder="Recherche...">
         </header>
         <main>
             <section id="logo">
-                <img src="images/logo.png" width="480">
+                <img src="images/logo.png" id="logo-img">
             </section>
-            <section class="form">
+            <section id="form">
                 <form>
                     <label for="civilite">Civilité:</label><br>
                     <select name="civilite" id="civilite">
@@ -42,6 +40,10 @@
                     <input type="text" id="prenom" name="prenom"><br>
                     <label for="objet">Objet:</label><br>
                     <input type="text" id="objet" name="objet"><br>
+                    <label for="mail">Mail:</label><br>
+                    <input type="text" id="mail" name="mail"><br>
+                    <label for="numero">Numéro de téléphone:</label><br>
+                    <input type="text" id="numero" name="numero"><br>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message"></textarea><br>
                     <input type="checkbox" id="accept" name="accept" value="Accept">
